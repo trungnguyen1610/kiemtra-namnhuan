@@ -1,6 +1,10 @@
-var year = parseInt(prompt("Enter Year need to check!"));
+
 var result = document.getElementById("result");
 var isLeapYear = false;
+//vong lap kiem tra nam co hop le k
+do {
+    var year = parseInt(prompt("Enter Year need to check!"));
+} while (isNaN(year) || year < 1);
 if (year % 4 == 0) {
     //chia hết cho 4 là năm nhuận
     if (year % 100 == 0) {
